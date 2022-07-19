@@ -1,0 +1,15 @@
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\bin\Debug\net6.0\Trial-App.exe
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\bin\Debug\net6.0\Trial-App.deps.json
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\bin\Debug\net6.0\Trial-App.runtimeconfig.json
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\bin\Debug\net6.0\Trial-App.dll
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\bin\Debug\net6.0\Trial-App.pdb
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.csproj.AssemblyReference.cache
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.AssemblyInfoInputs.cache
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.AssemblyInfo.cs
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.csproj.CoreCompileInputs.cache
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.dll
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\refint\Trial-App.dll
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.pdb
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\Trial-App.genruntimeconfig.cache
+C:\Users\chandra.dewi\zip\scheduling-program\Trial-App\Trial-App\obj\Debug\net6.0\ref\Trial-App.dll

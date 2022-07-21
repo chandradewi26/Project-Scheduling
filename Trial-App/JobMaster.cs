@@ -8,11 +8,24 @@ namespace Trial_App
 {
     public class JobMaster
     {
+        //Naming convention
+        //camelCase and pascal
+
+        //The input can come from various places : from file, or anywhere
+        //How do you make this testable
+        //Have manual cases on paper --> couple of examples
+        //heres the output that it should be doing --> TEST it
+        //later refactoring after finished.
+
+
+        //Pay attenttion of the access modifier, protect/public/private
+        //these should be private
         public List<Job> initialJobs;
         public List<Job> scheduledJobs;
         public List<Job> rejectedJobs;
         public int lastJobId; //I dont think its necessary
         public int totalCompletionTime;
+
 
         public JobMaster()
         {

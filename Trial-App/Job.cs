@@ -8,18 +8,18 @@ namespace Trial_App
 {
     public class Job
     {
-        public int Id { get; set; }
-        public int DueDate { get; set; }
-        public int ProcessingTime { get; set; }
+        private string Id { get; set; }
+        private int DueDate { get; set; }
+        private int ProcessingTime { get; set; }
         public Job()
         {
 
         }
-        public Job(int a, int b, int c)
+        public Job(int _id, int _dueDate, int _processingTime)
         {
-            this.Id = a;
-            this.DueDate = b;
-            this.ProcessingTime = c;
+            Id = ("ADR-" + _id);
+            DueDate = _dueDate;
+            ProcessingTime = _processingTime;
         }
 
         public override string ToString()

@@ -20,57 +20,51 @@ namespace Trial_App
 
         //Pay attenttion of the access modifier, protect/public/private
         //these should be private
-        public List<Job> initialJobs;
-        public List<Job> scheduledJobs;
-        public List<Job> rejectedJobs;
-        public int lastJobId; //I dont think its necessary
-        public int totalCompletionTime;
+        private List<Job> _initialJobs;
+        private List<Job> _scheduledJobs;
+        private List<Job> _rejectedJobs;
+        public int TotalCompletionTime;
 
 
         public JobMaster()
         {
-            initialJobs = new List<Job>();
-            scheduledJobs = new List<Job>();
-            rejectedJobs = new List<Job>();
-            totalCompletionTime = 0;
+            _initialJobs = new List<Job>();
+            _scheduledJobs = new List<Job>();
+            _rejectedJobs = new List<Job>();
+            TotalCompletionTime = 0;
         }
-
+        public void AddJob(Job job)
+        {
+            _initialJobs.Add(job);
+        }
         public void AssignJobs()
         {
-            //Using List<T>.Sort method (System.Collections.Generic)
-            //initialJobs.Sort(delegate (Job x, Job y) {
-            //    return x.DueDate.CompareTo(y.DueDate);
-            //});
+            //Using LINQ - Sort the jobs according to early date & processing time
+            _initialJobs = _initialJobs.OrderBy(x => x.DueDate).ThenBy(x => x.ProcessingTime).ToList();
 
-            //Using LINQ
-            //initialJobs = initialJobs.OrderBy(x=> x.DueDate).ThenBy(x=> x.DueDate).ToList();
-            initialJobs = initialJobs.OrderBy(x => x.DueDate).ThenBy(x => x.ProcessingTime).ToList();
-
-
-            //For every job
-            foreach (Job job in initialJobs)
-            {
+            foreach (Job job in _initialJobs)
+            {                
                 //Add the job to the scheduledjobs
-                scheduledJobs.Add(job);
+                _scheduledJobs.Add(job);
                 //If after we added this job, totalCompletionTime <= DueDate, done
-                if (totalCompletionTime + job.ProcessingTime <= job.DueDate)
+                if (TotalCompletionTime + job.ProcessingTime <= job.DueDate)
                 {
-                    totalCompletionTime += job.ProcessingTime;
+                    TotalCompletionTime += job.ProcessingTime;
                 }
                 else //Else, we keep index track of which job was the latest job with longest processing time
                 {
                     var threshold = -1;
                     var deleteIndex = -1;
-                    for (int i = 0; i < scheduledJobs.Count; i++)
+                    for (int i = 0; i < _scheduledJobs.Count; i++)
                     {
-                        if (scheduledJobs[i].ProcessingTime > threshold) {
+                        if (_scheduledJobs[i].ProcessingTime > threshold) {
                             deleteIndex = i;
                         }
                     }
 
                     //Remove the job with the largest processing time and move it to rejectedJobs
-                    rejectedJobs.Add(scheduledJobs[deleteIndex]);
-                    scheduledJobs.RemoveAt(deleteIndex);
+                    _rejectedJobs.Add(_scheduledJobs[deleteIndex]);
+                    _scheduledJobs.RemoveAt(deleteIndex);
 
                 }
             }
@@ -80,7 +74,7 @@ namespace Trial_App
         public void printInitialJobs()
         {
             Console.WriteLine("Initial jobs : ");
-            foreach (var job in initialJobs)
+            foreach (var job in _initialJobs)
             {
                 Console.WriteLine(job.ToString());
             }
@@ -89,7 +83,7 @@ namespace Trial_App
         public void printScheduledJobs()
         {
             Console.WriteLine("Scheduled jobs : ");
-            foreach (var job in scheduledJobs)
+            foreach (var job in _scheduledJobs)
             {
                 Console.WriteLine(job.ToString());
             }
@@ -98,7 +92,7 @@ namespace Trial_App
         public void printRejectedJobs()
         {
             Console.WriteLine("Rejected jobs : ");
-            foreach (var job in rejectedJobs)
+            foreach (var job in _rejectedJobs)
             {
                 Console.WriteLine(job.ToString());
             }

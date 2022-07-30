@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NanaMocchy\\nana-coding\\c_sharp\\Project-Scheduling\\Trial-App\\Trial-App.csproj": {}
+    "C:\\Users\\chandra.dewi\\zip\\scheduling-program\\Trial-App\\Trial-App\\Trial-App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NanaMocchy\\nana-coding\\c_sharp\\Project-Scheduling\\Trial-App\\Trial-App.csproj": {
+    "C:\\Users\\chandra.dewi\\zip\\scheduling-program\\Trial-App\\Trial-App\\Trial-App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NanaMocchy\\nana-coding\\c_sharp\\Project-Scheduling\\Trial-App\\Trial-App.csproj",
+        "projectUniqueName": "C:\\Users\\chandra.dewi\\zip\\scheduling-program\\Trial-App\\Trial-App\\Trial-App.csproj",
         "projectName": "Trial-App",
-        "projectPath": "C:\\Users\\NanaMocchy\\nana-coding\\c_sharp\\Project-Scheduling\\Trial-App\\Trial-App.csproj",
-        "packagesPath": "C:\\Users\\NanaMocchy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NanaMocchy\\nana-coding\\c_sharp\\Project-Scheduling\\Trial-App\\obj\\",
+        "projectPath": "C:\\Users\\chandra.dewi\\zip\\scheduling-program\\Trial-App\\Trial-App\\Trial-App.csproj",
+        "packagesPath": "C:\\Users\\chandra.dewi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chandra.dewi\\zip\\scheduling-program\\Trial-App\\Trial-App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NanaMocchy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chandra.dewi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

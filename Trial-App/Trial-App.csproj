@@ -8,4 +8,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="password-verifier1.js">
+      <SubType>Code</SubType>
+    </None>
+    <None Update="__tests__\password.verifier2.spec.js">
+      <SubType>Code</SubType>
+    </None>
+    <None Update="__tests__\password.verifier1.spec.js">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -1,17 +1,40 @@
 ﻿using Trial_App;
 
-//Child Class learning
-JobChild newJobChild = new JobChild(1, 25, 5);
-//Public Get Set Usage
-newJobChild.addDescription(newJobChild.Description);
-newJobChild.Description = "Test";
+//This is manual test
+var rand = new Random();
 
-Shape shape = new Shape();
-shape.Draw();
-Circle circle = new Circle();
-circle.Draw();
+var master = new JobMaster();
+
+master.AddJob(new Job(2001, 5, 2));
+master.AddJob(new Job(2002, 5, 4));
+master.AddJob(new Job(2003, 7, 3));
+master.AddJob(new Job(2004, 9, 1));
+master.AddJob(new Job(2005, 8, 3));
+
+master.AssignJobs();
+master.printInitialJobs();
+master.printScheduledJobs();
+master.printRejectedJobs();
+
+return 0;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+//This is manual test
 Console.WriteLine("\n\nFor sprint of 14 days, and processing time of 1-5 days per job : ");
 var rand = new Random();
 int id = 2000;
@@ -44,3 +67,5 @@ master.AssignJobs();
 master.printInitialJobs();
 master.printScheduledJobs();
 master.printRejectedJobs();
+
+*/

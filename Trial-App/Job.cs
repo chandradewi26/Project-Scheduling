@@ -19,7 +19,6 @@ namespace Trial_App
         protected string _id { get; set; }
         public int DueDate { get; set; }
         public int ProcessingTime { get; set; }
-        public Job() { }
         public Job(int id, int dueDate, int processingTime)
         {
             _id = ("ADR-" + id);
